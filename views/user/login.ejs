@@ -1,0 +1,34 @@
+<% layout('/layouts/boilerplate.ejs'); %> 
+<br><br>
+<div class="row">
+    <div class="col-8 offset-2">
+        <h2>Login to ZenStay</h2>
+        <br>
+        <form action="/login" method="POST" novalidate class="needs-validation">
+            <div class="row">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" placeholder="Enter your Username" required class="form-control"> 
+                    <div class="invalid-feedback">
+                        Enter a valid username.
+                      </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" placeholder="Enter your password" required class="form-control">
+                    <div class="invalid-feedback">
+                        Enter a valid password.
+                      </div>
+                </div>
+                
+            </div>
+            <div class="col-12">
+              </div>
+            <br>
+            <button class="btn btn-outline-primary createBtn" type="submit">Login</button>
+        </form>
+    </div>
+    
+    </div>
+    
